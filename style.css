@@ -1,0 +1,205 @@
+/* Début du CSS de la page */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: #000;
+    font-family: 'Inconsolata', monospace;
+}
+/* Partie Header */
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(5, 5, 5), rgb(58, 58, 58));
+}
+/* CSS image */
+.content_image {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.logo {
+    width: 50%;
+}
+/* CSS navBar */
+.content_navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    width: 30%;
+}
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(247, 239, 247);
+    transition: 0.5s;
+}
+ a:hover {
+     color: #3087af;
+ }
+/* CSS du meilleur film */
+.separate {
+    background-color: rgb(247, 239, 247);
+    height: 1px;
+}
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    background: linear-gradient(#3087af,#1e2b33);
+}
+.best__titre {
+    color: rgb(247, 239, 247);
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.best_left {
+    margin-right: 30px;
+}
+.main__button {
+    width: 150px;
+    height: 50px;
+    border: 0.5px solid black;
+    font-size: 1.3em;
+    background-size: 200%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #1e2b33, #af2027, #1e2b33);
+    transition: 0.5s;
+}
+.main__button:hover{
+    background-position: right;
+}
+p {
+    color: rgb(247, 239, 247);
+}
+img {
+    cursor: pointer;
+    width: 250px;
+}
+.best__description {
+    max-width: 55%;
+    font-size: 1.3em;
+    line-height: 150%;
+}
+/* CSS des autres sections  */
+.insert_carousel {
+    padding-bottom: 50px;
+    background: linear-gradient(rgb(5, 5, 5), rgb(54, 54, 54));
+}
+.titre_section {
+    text-align: center;
+    margin: 30px 0 30px 0;
+    color: rgb(247, 239, 247);
+    font-size: 2em;
+}
+.carousel__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.carousel__btn_left {
+    background-size: 200%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        to right,
+        #1e2b33,
+        #3087af,
+        #1e2b33
+    );
+    transition: 0.5s;
+    background-position: left;
+}
+.carousel__btn_right {
+    background-size: 200%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        to right,
+        #1e2b33,
+        #3087af,
+        #1e2b33
+    );
+    transition: 0.5s;
+    background-position: right;
+}
+.carousel__btn_left, .carousel__btn_right {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+.arrow__left {
+    font-size: 30px;
+    padding-right: 5px;
+}
+.arrow__right {
+    font-size:30px;
+    padding-left: 5px;
+}
+/* CDD du footer */
+.main__footer {
+    height: 200px;
+    background: linear-gradient(#215b75,#1e2b33);
+}
+/* CSS de la fenêtre modale */
+.modal{
+    background: linear-gradient(#1a485c,#3087af);
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    width: 45%;
+    height: 60%;
+    overflow: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.content_btn_modal {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+}
+.modal_toggle {
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    padding-top: 3px;
+    margin: 10px 15px 0 0;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.modal__image {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.content_info {
+    max-width: 550px;
+    margin: 0 0 40px 50px;
+    color: white;
+    font-size: 1.2em;
+}
+.modal_info {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+.modal_content {
+    margin-left: 10%;
+    margin: 10px 0 2px 0;
+}
