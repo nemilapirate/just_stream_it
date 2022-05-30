@@ -20,13 +20,13 @@ export async function get_best_movie(url){
 
     let films_detail = await get_request(best_film_url)
 
-    let title = document.getElementsByClassName("best__titre");
+    let title = document.getElementsByClassName("best_titre");
     title[0].innerHTML = array_film[0].title;
 
-    let image = document.getElementsByClassName("best__image");
+    let image = document.getElementsByClassName("best_image");
     image[0].setAttribute("src", array_film[0].image_url)
 
-    let description = document.getElementsByClassName("best__description");
+    let description = document.getElementsByClassName("best_description");
     description[0].innerHTML = films_detail.description;
 
     add_best_btn_event(films_detail)
@@ -34,12 +34,12 @@ export async function get_best_movie(url){
 
 
 export function add_best_btn_event(data){
-    let btn = document.querySelector('.main__button')
+    let btn = document.querySelector('.main_button')
     btn.addEventListener("click", ()=>{
         modal.display_modal(data)
     })
 
-    let img = document.querySelector('.best__image')
+    let img = document.querySelector('.best_image')
     img.addEventListener("click", ()=>{
         modal.display_modal(data)
     })

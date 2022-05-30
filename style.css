@@ -54,7 +54,7 @@ a {
     padding: 40px 0 40px 0;
     background: linear-gradient(#3087af,#1e2b33);
 }
-.best__titre {
+.best_titre {
     color: rgb(247, 239, 247);
     margin-bottom: 20px;
     font-size: 2em;
@@ -62,7 +62,7 @@ a {
 .best_left {
     margin-right: 30px;
 }
-.main__button {
+.main_button {
     width: 150px;
     height: 50px;
     border: 0.5px solid black;
@@ -74,7 +74,7 @@ a {
     background-image: linear-gradient(to right, #1e2b33, #af2027, #1e2b33);
     transition: 0.5s;
 }
-.main__button:hover{
+.main_button:hover{
     background-position: right;
 }
 p {
@@ -84,7 +84,7 @@ img {
     cursor: pointer;
     width: 250px;
 }
-.best__description {
+.best_description {
     max-width: 55%;
     font-size: 1.3em;
     line-height: 150%;
@@ -100,12 +100,12 @@ img {
     color: rgb(247, 239, 247);
     font-size: 2em;
 }
-.carousel__content {
+.carousel_content {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.carousel__btn_left {
+.carousel_btn_left {
     background-size: 200%;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(
@@ -117,7 +117,7 @@ img {
     transition: 0.5s;
     background-position: left;
 }
-.carousel__btn_right {
+.carousel_btn_right {
     background-size: 200%;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(
@@ -129,7 +129,7 @@ img {
     transition: 0.5s;
     background-position: right;
 }
-.carousel__btn_left, .carousel__btn_right {
+.carousel_btn_left, .carousel_btn_right {
     width: 50px;
     height: 50px;
     border: none;
@@ -138,16 +138,16 @@ img {
     border: 1px solid white;
     color: white;
 }
-.arrow__left {
+.arrow_left {
     font-size: 30px;
     padding-right: 5px;
 }
-.arrow__right {
+.arrow_right {
     font-size:30px;
     padding-left: 5px;
 }
 /* CDD du footer */
-.main__footer {
+.main_footer {
     height: 200px;
     background: linear-gradient(#215b75,#1e2b33);
 }
@@ -180,12 +180,12 @@ img {
     margin: 10px 15px 0 0;
 }
 
-.modal__content {
+.modal_content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.modal__image {
+.modal_image {
     margin-top: 30px;
     margin-left: 60px;
 }

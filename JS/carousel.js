@@ -15,7 +15,7 @@ export function create_carousel(data, categorie, isBest){
             titre.textContent = categorie;
         }
 
-        let carousel_content = clone.querySelector(".carousel__content");
+        let carousel_content = clone.querySelector(".carousel_content");
         carousel_content.classList.add(categorie)
         let images = clone.querySelectorAll("img");
         let position = 0;
@@ -24,7 +24,6 @@ export function create_carousel(data, categorie, isBest){
             image.setAttribute("alt", data[position].title)
             position += 1;
         }
-        // insert clone in DOM
         if (isBest){
             insert.insertBefore(clone, insert.firstChild)
         } else{
@@ -33,12 +32,12 @@ export function create_carousel(data, categorie, isBest){
         add_btn_event_click(carousel, categorie);
         add_image_event_click(carousel, categorie);
     } else{
-        console.log("Le naviguateur ne prend pas en charge les templates")
+        console.log("Le naviguateur ne gère pas les templates")
     }
 }
 
 export function add_image_event_click(carousel, categorie){
-    let images = document.querySelectorAll(".carousel__content."+categorie+ " img")
+    let images = document.querySelectorAll(".carousel_content."+categorie+ " img")
     for (let img of images){
         img.addEventListener("click", ()=>{
             let index = parseInt(img.className);
@@ -48,8 +47,8 @@ export function add_image_event_click(carousel, categorie){
 }
 
 export function add_btn_event_click(carousel, categorie){
-    let btn_left = document.querySelector(".carousel__content."+categorie+ " .carousel__btn_left")
-    let btn_right = document.querySelector(".carousel__content."+categorie+ " .carousel__btn_right")
+    let btn_left = document.querySelector(".carousel_content."+categorie+ " .carousel_btn_left")
+    let btn_right = document.querySelector(".carousel_content."+categorie+ " .carousel_btn_right")
     btn_left.addEventListener("click", () => {
         carousel.move_left();
     })
@@ -89,7 +88,7 @@ export class Carousel{
     }
 
     display_film(){
-        let carousel_content = document.querySelectorAll(".carousel__content." + this.categorie + " img");
+        let carousel_content = document.querySelectorAll(".carousel_content." + this.categorie + " img");
         let count = 0
         for (let img of carousel_content){
             img.setAttribute("src", this.visible_film[count].image_url)
